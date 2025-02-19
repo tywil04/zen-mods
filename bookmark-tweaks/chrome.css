@@ -1,6 +1,6 @@
 #personal-bookmarks {
   --toolbarbutton-inner-padding: 0px;
-  margin-top: 6px !important;;
+  margin-top: 6px !important;
 }
 
 #personal-bookmarks:hover {
@@ -16,19 +16,19 @@
 }
 
 #personal-bookmarks .bookmark-item {
-  background: var(--zen-toolbar-element-bg) !important;;
-  border-radius: var(--border-radius-medium) !important;;
+  background: var(--zen-toolbar-element-bg) !important;
+  border-radius: var(--border-radius-medium) !important;
   height: 36px !important;
 }
 
 #personal-bookmarks .bookmark-item:hover {
-  background: light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2)) !important;;
+  background: light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2)) !important;
 }
 
 #personal-bookmarks #PlacesToolbarItems {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(36px, auto)) !important;;
-  gap: 2px !important;;
+  grid-template-columns: repeat(auto-fit, minmax(36px, auto)) !important;
+  gap: 2px !important;
 }
 
 #personal-bookmarks #PlacesChevron {
