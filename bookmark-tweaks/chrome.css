@@ -1,0 +1,36 @@
+#personal-bookmarks {
+  --toolbarbutton-inner-padding: 0px;
+  margin-top: 6px;
+}
+
+#personal-bookmarks:hover {
+  --toolbarbutton-hover-background: transparent;
+}
+
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+  margin-inline-end: 0px !important;
+}
+
+#personal-bookmarks .bookmark-item .toolbarbutton-text {
+  display: none !important;
+}
+
+#personal-bookmarks .bookmark-item {
+  background: var(--zen-toolbar-element-bg);
+  border-radius: var(--border-radius-medium);
+  height: 36px !important;
+}
+
+#personal-bookmarks .bookmark-item:hover {
+  background: light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2));
+}
+
+#personal-bookmarks #PlacesToolbarItems {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(36px, auto));
+  gap: 2px;
+}
+
+#personal-bookmarks #PlacesChevron {
+  display: none !important;
+}
