@@ -1,34 +1,40 @@
 #personal-bookmarks {
   --toolbarbutton-inner-padding: 0px;
-  margin-top: 6px !important;
+
+  margin-bottom: 4px !important;
+  max-width: calc(var(--zen-sidebar-width) - 6px) !important;
+  border-radius: 0px !important;
+  overflow: hidden;
 }
 
 #personal-bookmarks:hover {
   --toolbarbutton-hover-background: transparent;
 }
 
-#personal-bookmarks .bookmark-item .toolbarbutton-icon {
-  margin-inline-end: 0px !important;
+#personal-bookmarks #PlacesToolbarItems {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto)) !important;
+  grid-auto-flow: row !important;
+   
+  gap: 2px !important;
 }
 
-#personal-bookmarks .bookmark-item .toolbarbutton-text {
-  display: none !important;
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+  margin-inline-end: 4px !important;
+  border-radius: 4px;
 }
 
 #personal-bookmarks .bookmark-item {
   background: var(--zen-toolbar-element-bg) !important;
   border-radius: var(--border-radius-medium) !important;
-  height: 36px !important;
+  height: 28px important;
+  visibility: visible !important;
+  padding: 6px !important;
 }
 
 #personal-bookmarks .bookmark-item:hover {
   background: light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2)) !important;
-}
-
-#personal-bookmarks #PlacesToolbarItems {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(36px, auto)) !important;
-  gap: 2px !important;
 }
 
 #personal-bookmarks #PlacesChevron {
